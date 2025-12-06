@@ -1,151 +1,87 @@
-Islamic App – DEPI Project
+Islamic App
 
-A modern mobile application designed to serve the global Muslim community by providing essential Islamic resources such as Quran reading, translations, Hadith, Tasbeeh counter, and more — all in a simple and user-friendly interface.
+A modern Flutter application providing essential Islamic tools — including Quran, Hadith, Tasbeeh, and Quran Radio — with full Arabic & English support.
 
-Overview
+ Features
+ Quran
 
-This project is developed as part of the DEPI Mobile Application Track.
-The Islamic App provides easy access to Quranic content, Hadith, Tasbeeh counter, and other tools that support Muslims in their daily spiritual practices.
-
-Our main goal is to deliver a clean, fast, and reliable mobile experience with organized Islamic features all in one place.
-
-Target Users
-
-The app is built for:
-
-Muslims of all ages seeking quick access to Islamic content
-
-Users who prefer digital Quran recitation & listening
-
-Individuals who want a digital tasbeeh counter instead of physical ones
-
-People who want Hadith and Azkar collections with translation
-
-Users who prefer multilingual support (Arabic & English)
-
-Core Features
-
- Holy Quran
-
-Read, listen, and follow along with Arabic text
-
-Includes translations
+Read all Surahs
 
 Audio recitations
 
- Ahadeth Collection
+Clean navigation interface
 
-Arabic + English translations
+ Hadith Collection
 
-Clean browsing experience
+Arabic + English translation
 
- Tasbeeh Counter
+Organized categories
 
-With vibration feedback
+ Digital Tasbeeh
 
-Automatically saves your history
+Haptic vibration
 
-Additional Features
+Saves last value
 
- Live Quran Radio streaming
+ Live Quran Radio
 
- Dark & Light mode switch
+High-quality streaming
 
- Arabic & English language support
+ Themes & Localization
 
- Technology Stack
+Light / Dark mode
 
-Flutter (Dart) – main framework
+Arabic & English support
 
-MVVM architecture for scalable code structure
-
-State Management: setState / (replace with provider/bloc if applicable)
-
-Firebase (if included)
-
-Local storage: SharedPreferences / SQFLite (depending on your app)
-
-Project Architecture
-
-The app uses the MVVM pattern, which separates:
-
-Layer	Responsibility
-Model	Data models & business objects
-View	UI screens and widgets
-ViewModel	Handles UI logic & data binding
-
-This ensures better maintainability, testing, and scalability.
-
-Installation & Setup
-
-Follow these steps to run the project locally:
-
-1️⃣ Clone the repository
-git clone https://github.com/your-username/your-repo.git
-
-2️⃣ Install dependencies
-flutter pub get
-
-3️⃣ Run the application
-flutter run
-
-4️⃣ (Optional) Build APK
-flutter build apk
-
-📂 Folder Structure
+ Project Structure
 lib/
 │
-├── app/
-│   ├── settings/
-│   ├── themes/
-│   └── routes/
-│
-├── core/
-│   ├── constants/
-│   ├── helpers/
-│   └── widgets/
-│
-├── l10n/
-│   └── *.arb   (localization files)
-│
-├── providers/
-│   ├── theme_provider.dart
-│   ├── language_provider.dart
-│   ├── quran_provider.dart
-│   └── radio_provider.dart
-│
-├── Ui/
-│   ├── screens/
-│   │   ├── splash/
-│   │   ├── home/
-│   │   ├── quran/
-│   │   ├── hadeth/
-│   │   ├── tasbeeh/
-│   │   └── settings/
-│   │
-│   └── widgets/
-│
-├── cache/
-│   └── shared_pref.dart
-│
-├── main.dart
-│
-└── utils/
+├── app/               # App-level configs (theme, routes)
+├── core/              # Constants, helpers, shared widgets
+├── l10n/              # Localization files (.arb)
+├── providers/         # State management (Provider classes)
+├── Ui/                # Screens + Widgets
+│   ├── home/
+│   ├── splash/
+│   ├── quran/
+│   ├── hadeth/
+│   ├── tasbeeh/
+│   └── settings/
+├── cache/             # Shared Preferences helper
+└── main.dart
 
-🚀 Future Enhancements
+🛠️ Tech Stack
 
-Offline Quran audio download
+Flutter
 
-More reciters
+Dart
 
-Prayer times & Qibla direction
+Provider (State Management)
 
-Daily reminders for Azkar
+SharedPreferences
 
-Cloud sync for tasbeeh history
+just_audio + audio_session
 
-👥 Contributors
+flutter_localization
+
+ Installation
+Clone the repository
+git clone https://github.com/your-username/Islamic-App.git
+cd Islamic-App
+
+Install dependencies
+flutter pub get
+
+Run the project
+flutter run
+
+Build release APK
+flutter build apk --release
+
+
+ Contributors
 
 Nada Waleed 
 Islam Hussein
 Shahd Ashraf
+
